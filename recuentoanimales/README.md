@@ -6,6 +6,9 @@ En este proyecto se presenta el patron de diseño iterador en el cual se crea un
 ## Iterator
 Iterator o Iterador es un patrón de diseño de comportamiento que le permite recorrer elementos de una colección sin exponer su representación subyacente (lista, pila, árbol, etc.).
 
+![alt text](https://refactoring.guru/images/patterns/diagrams/iterator/structure.png)
+
+
 ## Cómo implementar
 
 -Declara la interfaz del iterador. Como mínimo, debe tener un método para obtener el siguiente elemento de una colección. Pero por conveniencia, puede agregar un par de otros métodos, como recuperar el elemento anterior, rastrear la posición actual y verificar el final de la iteración.
