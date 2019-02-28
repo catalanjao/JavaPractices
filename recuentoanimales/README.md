@@ -6,7 +6,7 @@ En este proyecto se presenta el patron de diseño iterador en el cual se crea un
 ## Iterator
 Iterator o Iterador es un patrón de diseño de comportamiento que le permite recorrer elementos de una colección sin exponer su representación subyacente (lista, pila, árbol, etc.).
 
-##Cómo implementar
+## Cómo implementar
 
 -Declara la interfaz del iterador. Como mínimo, debe tener un método para obtener el siguiente elemento de una colección. Pero por conveniencia, puede agregar un par de otros métodos, como recuperar el elemento anterior, rastrear la posición actual y verificar el final de la iteración.
 
@@ -18,9 +18,9 @@ Iterator o Iterador es un patrón de diseño de comportamiento que le permite re
 
 -Revise el código del cliente para reemplazar todo el código de recorrido de la colección con el uso de iteradores. El cliente obtiene un nuevo objeto iterador cada vez que necesita iterar sobre los elementos de la colección.
 
-##Pros y contras
+## Pros y contras
 
-###Pros
+### Pros
 -Principio de Responsabilidad Única . Puede limpiar el código del cliente y las colecciones extrayendo algoritmos de recorrido voluminosos en clases separadas.
 
 -Principio Abierto / Cerrado . Puede implementar nuevos tipos de colecciones e iteradores y pasarlos al código existente sin romper nada.
@@ -29,7 +29,7 @@ Iterator o Iterador es un patrón de diseño de comportamiento que le permite re
 
 - Por el mismo motivo, puede retrasar una iteración y continuarla cuando sea necesario.
 
-###Contras
+### Contras
 
 -Aplicar el patrón puede ser una exageración si tu aplicación solo funciona con colecciones simples.
 
