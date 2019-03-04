@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd"> 
     <changeSet author="alfonso_catalan" id="20190303-001">
-        <createTable tableName="user">
+        <createTable tableName="users">
             <column name="id" type="INT">
                 <constraints nullable="false" primaryKey="true" unique="true"/>
             </column>
@@ -23,6 +23,6 @@
     <changeSet author="alfonso_catalan" id="20190303-002">
         <addAutoIncrement columnDataType="int"
                 columnName="id"
-                tableName="user"/>
+                tableName="users"/>
     </changeSet>
 </databaseChangeLog> 

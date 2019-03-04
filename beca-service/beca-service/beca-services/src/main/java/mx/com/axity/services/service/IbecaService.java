@@ -12,5 +12,5 @@ public interface IbecaService {
     int mul(int mul1);
     int div(int div1);
     List<UserDO> getAllUsers();
-
+    void newuser(UserDO userDO);
 }
