@@ -1,0 +1,38 @@
+ybfsxyxtkvxhfyxr
+ybfsxyxtkvxhfyxr
+https://intellego365.sharepoint.com/sites/SWDNOLA/STAD/SitePages/Inicio.aspx
+http://192.168.0.20:8080/newjira/secure/Dashboard.jspa   751
+https://axity-swd.slack.com 
+https://www.draw.io/
+https://downloadly.ir/?s=datagrip
+https://www.gitignore.io/
+httpS://hackerrank.com
+https://danielkummer.github.io/git-flow-cheatsheet/
+https://www.getpostman.com/downloads/
+
+chrome 30 seconds of knolewge
+
+url: jdbc:postgresql://10.11.5.171:5420/postgres
+username: postgres
+password: beca1029
+
+git init		
+git status		
+git add .		
+git add file.ext		ension	
+git commit -m ""	message
+git commit -a -m ""	alredy exist
+git remote -v		remotes available
+git push origin master	push
+git remote add origin https://github.com/catalanjao/JavaPractices.git
+git branch beca		generar rama
+git checkout beca	cambiar de ramad
+
+---- first remote name 'origin' /  second remote name 'otro'
+
+mvn clean
+mvn compile
+mvn clean compile
+mvn clean package
+mvn clean install
+mvn clean deploy
