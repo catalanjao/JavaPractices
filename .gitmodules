@@ -1,0 +1,3 @@
+[submodule "liquibase"]
+	path = liquibase
+	url = C:\\Users\\jose.catalan\\Documents\\Repositories\\JavaPractices\\liquibase
