@@ -8,4 +8,6 @@ public interface IbecaFacade {
 
     List<UserTO> getAllUsers();
 
+    int operation(int num1, int sum2);
+
 }
