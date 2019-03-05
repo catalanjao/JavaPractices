@@ -71,7 +71,7 @@ public class HelloController {
         LOG.info(userTO.getLastName());
         LOG.info(userTO.getAge());
         LOG.info("Se invoca /users para el update");
-        this.IbecaFacade.newUser(userTO);
+        this.IbecaFacade.updateUser(userTO);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

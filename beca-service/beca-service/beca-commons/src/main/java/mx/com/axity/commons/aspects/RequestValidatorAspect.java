@@ -1,13 +1,18 @@
 package mx.com.axity.commons.aspects;
 
+import com.oracle.jrockit.jfr.NoSuchEventException;
 import mx.com.axity.commons.exceptions.BusinessException;
+import mx.com.axity.commons.to.ErrorTo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+
+import java.util.NoSuchElementException;
 
 @Aspect
 @Configuration
@@ -24,10 +29,20 @@ public class RequestValidatorAspect {
             result = (ResponseEntity) joinPoint.proceed();
             return result;
         }catch (Throwable e) {
-            LOG.info("Exception Ocurred");
-            LOG.info("Execution: {}", joinPoint.getSignature());
-            LOG.info("Exception: {}", e.getMessage());
-            throw new BusinessException("Error", e);
+            ErrorTo errorTo=new ErrorTo();
+            if(e instanceof NoSuchElementException){
+                errorTo.setErrorCode((long) 1);
+                errorTo.setErrorMessage("No existe el dato");
+            }else{
+                errorTo.setErrorCode((long) 2);
+                errorTo.setErrorMessage("Ocurrió un error");
+            }
+
+            return new ResponseEntity<ErrorTo>(errorTo,HttpStatus.OK);
+            //LOG.info("Exception Ocurred");
+            //LOG.info("Execution: {}", joinPoint.getSignature());
+            //LOG.info("Exception: {}", e.getMessage());
+            //throw new BusinessException("Error", e);
         }
     }
 }
