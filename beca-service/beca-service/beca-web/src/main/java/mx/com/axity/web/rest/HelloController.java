@@ -35,21 +35,21 @@ public class HelloController {
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/userid", method = RequestMethod.GET, produces = "application/json")
-    public ResponseEntity<UserTO> getUserId(@RequestBody UserTO id) {
+    @RequestMapping(value = "/user", method = RequestMethod.GET, produces = "application/json")
+    public ResponseEntity getUserId(@RequestParam (value = "id") int id) {
         LOG.info("Se invoca /userid");
-        UserTO userid = this.IbecaFacade.getUserId(id.getId());
+        UserTO userid = this.IbecaFacade.getUserId(id);
         return new ResponseEntity<>(userid,HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/deleteid", method = RequestMethod.GET, produces = "application/json")
-    public ResponseEntity<UserTO> deleteUserId(@RequestBody UserTO id) {
+    @RequestMapping(value = "/user", method = RequestMethod.DELETE, produces = "application/json")
+    public ResponseEntity<UserTO> deleteUserId(@RequestParam (value = "id") int id) {
         LOG.info("Se invoca /userid");
-        this.IbecaFacade.deleteUserId(id.getId());
+        this.IbecaFacade.deleteUserId(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/save", method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "/user", method = RequestMethod.POST, produces = "application/json")
     public ResponseEntity saveUser(@RequestBody UserTO userTO) {
 
         LOG.info("User");
@@ -62,7 +62,7 @@ public class HelloController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/update", method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "/user", method = RequestMethod.PUT, produces = "application/json")
     public ResponseEntity updateUser(@RequestBody UserTO userTO) {
 
         LOG.info("User");
@@ -75,7 +75,7 @@ public class HelloController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/user", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/users1", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity finduser(@RequestParam(value = "id") int id) {
         LOG.info("user");
         LOG.info(id);

@@ -8,7 +8,12 @@ https://downloadly.ir/?s=datagrip
 https://www.gitignore.io/
 httpS://hackerrank.com
 https://danielkummer.github.io/git-flow-cheatsheet/
+https://maven.apache.org/download.cgi
 https://www.getpostman.com/downloads/
+https://swagger.io/
+http://localhost:9090/swagger-ui.html#/
+http://roufid.com/no-compiler-is-provided-in-this-environment/#1-_refer_the_java_home_to_a_jdk
+https://stackoverflow.com/questions/16890723/list-all-liquibase-sql-types
 
 chrome 30 seconds of knolewge
 

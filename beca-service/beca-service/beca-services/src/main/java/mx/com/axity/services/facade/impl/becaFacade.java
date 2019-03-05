@@ -52,7 +52,6 @@ public class becaFacade implements IbecaFacade {
         Type userDOType = new TypeToken<UserDO>() {}.getType();
         UserDO result = this.modelMapper.map(user,userDOType);
         this.becaService.newUser(result);
-
     }
 
     @Override

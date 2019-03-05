@@ -52,8 +52,10 @@ public class becaServiceImpl implements IbecaService {
 
     @Override
     public UserDO userByID(int id) {
-        Optional<UserDO> userDoOptional = this.userDAO.findById((long) id);
-        return userDoOptional.get();
+        if(this.userDAO.existsById((long) id)){
+            return this.userDAO.findById((long) id).get();
+        }
+        return new UserDO("notfound","",0);
     }
 
     @Override
