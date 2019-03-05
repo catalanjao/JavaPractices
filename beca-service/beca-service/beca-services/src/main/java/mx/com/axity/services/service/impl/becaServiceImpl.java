@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.lang.reflect.Type;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class becaServiceImpl implements IbecaService {
@@ -50,9 +51,19 @@ public class becaServiceImpl implements IbecaService {
     }
 
     @Override
-    public void newuser(UserDO userDO) {
+    public UserDO userByID(int id) {
+        Optional<UserDO> userDoOptional = this.userDAO.findById((long) id);
+        return userDoOptional.get();
+    }
+
+    @Override
+    public void newUser(UserDO userDO) {
         this.userDAO.save(userDO);
     }
 
+    @Override
+    public void deleteUserId(int id) {
+        this.userDAO.deleteById((long) id);
+    }
 
 }

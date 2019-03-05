@@ -35,7 +35,21 @@ public class HelloController {
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/users", method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "/userid", method = RequestMethod.GET, produces = "application/json")
+    public ResponseEntity<UserTO> getUserId(@RequestBody UserTO id) {
+        LOG.info("Se invoca /userid");
+        UserTO userid = this.IbecaFacade.getUserId(id.getId());
+        return new ResponseEntity<>(userid,HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/deleteid", method = RequestMethod.GET, produces = "application/json")
+    public ResponseEntity<UserTO> deleteUserId(@RequestBody UserTO id) {
+        LOG.info("Se invoca /userid");
+        this.IbecaFacade.deleteUserId(id.getId());
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST, produces = "application/json")
     public ResponseEntity saveUser(@RequestBody UserTO userTO) {
 
         LOG.info("User");
@@ -43,8 +57,21 @@ public class HelloController {
         LOG.info(userTO.getName());
         LOG.info(userTO.getLastName());
         LOG.info(userTO.getAge());
-        this.IbecaFacade.newuser(userTO);
+        LOG.info("Se invoca /users para el guardado");
+        this.IbecaFacade.newUser(userTO);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 
+    @RequestMapping(value = "/update", method = RequestMethod.POST, produces = "application/json")
+    public ResponseEntity updateUser(@RequestBody UserTO userTO) {
+
+        LOG.info("User");
+        LOG.info(userTO.getId());
+        LOG.info(userTO.getName());
+        LOG.info(userTO.getLastName());
+        LOG.info(userTO.getAge());
+        LOG.info("Se invoca /users para el update");
+        this.IbecaFacade.newUser(userTO);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

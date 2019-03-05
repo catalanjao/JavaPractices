@@ -33,7 +33,6 @@ public class becaFacade implements IbecaFacade {
     @Override
     public List<UserTO> getAllUsers() {
         List<UserDO> userDoList = this.becaService.getAllUsers();
-
         Type userTOType = new TypeToken<List<UserTO>>() {}.getType();
         List<UserTO> result = this.modelMapper.map(userDoList, userTOType);
 
@@ -41,11 +40,24 @@ public class becaFacade implements IbecaFacade {
     }
 
     @Override
-    public void newuser(UserTO user) {
+    public UserTO getUserId(int id) {
+        UserDO userGetted = this.becaService.userByID(id);
+        Type userTOType = new TypeToken<UserTO>() {}.getType();
+        UserTO result =this.modelMapper.map(userGetted,userTOType);
+        return result;
+    }
+
+    @Override
+    public void newUser(UserTO user) {
         Type userDOType = new TypeToken<UserDO>() {}.getType();
         UserDO result = this.modelMapper.map(user,userDOType);
-        this.becaService.newuser(result);
+        this.becaService.newUser(result);
 
+    }
+
+    @Override
+    public void deleteUserId(int id) {
+        this.becaService.deleteUserId(id);
     }
 
 }

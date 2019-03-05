@@ -8,5 +8,7 @@ public interface IbecaFacade {
 
     int operation(int num1, int sum2);
     List<UserTO> getAllUsers();
-    void newuser(UserTO user);
+    UserTO getUserId(int id);
+    void newUser(UserTO user);
+    void deleteUserId(int id);
 }
