@@ -2,14 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92a39589-f9a7-4905-ba60-693ce919a918" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/to/ErrorTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/impl/IbecaServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/Dockerfile-beca-service" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/Dockerfile-beca-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-commons/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/aspects/RequestValidatorAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/aspects/RequestValidatorAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/facade/IbecaFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/facade/IbecaFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/facade/impl/becaFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/facade/impl/becaFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/IbecaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/IbecaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/impl/becaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/impl/becaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/src/main/java/mx/com/axity/web/rest/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/src/main/java/mx/com/axity/web/rest/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/exceptions/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/exceptions/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/to/UserTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/to/UserTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-commons/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-commons/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-model/src/main/java/mx/com/axity/model/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-model/src/main/java/mx/com/axity/model/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-persistence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-persistence/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-persistence/src/main/java/mx/com/axity/persistence/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-persistence/src/main/java/mx/com/axity/persistence/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-persistence/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-persistence/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/impl/becaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/service/becaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/service/becaServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-services/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-services/src/test/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/src/main/java/mx/com/axity/web/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/src/main/java/mx/com/axity/web/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/src/main/java/mx/com/axity/web/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/src/main/java/mx/com/axity/web/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/src/test/java/mx/com/axity/web/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/src/test/java/mx/com/axity/web/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/src/test/java/mx/com/axity/web/rest/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/src/test/java/mx/com/axity/web/rest/HelloControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/beca-web/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/beca-web/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beca-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beca-service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/beca-service/target/" />
     <ignored path="$PROJECT_DIR$/beca-service/beca-web/target/" />
@@ -25,27 +49,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beca-service/beca-web/src/main/java/mx/com/axity/web/rest/HelloController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/service/becaServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="58" />
+            <state relative-caret-position="233">
+              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/aspects/RequestValidatorAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="682">
+              <caret line="43" column="56" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="56" />
               <folding>
-                <element signature="method#getAllUsers#0;class#HelloController#0" />
-                <element signature="method#saveUser#0;class#HelloController#0" />
-                <element signature="method#finduser#0;class#HelloController#0" />
-                <element signature="method#test#0;class#HelloController#0" />
-                <element signature="method#operation#0;class#HelloController#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/service/becaServiceTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beca-service/beca-model/src/main/java/mx/com/axity/model/UserDO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="286">
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -66,10 +95,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/exceptions/BusinessException.java" />
-        <option value="$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/service/becaServiceTest.java" />
         <option value="$PROJECT_DIR$/beca-service/beca-web/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/beca-service/beca-persistence/src/main/java/mx/com/axity/persistence/UserDAO.java" />
-        <option value="$PROJECT_DIR$/beca-service/beca-model/src/main/java/mx/com/axity/model/UserDO.java" />
         <option value="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/facade/impl/becaFacade.java" />
         <option value="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/IbecaService.java" />
         <option value="$PROJECT_DIR$/beca-service/beca-web/src/main/java/mx/com/axity/web/rest/HelloController.java" />
@@ -77,6 +104,10 @@
         <option value="$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/impl/becaServiceImpl.java" />
         <option value="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/to/ErrorTo.java" />
         <option value="$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/aspects/RequestValidatorAspect.java" />
+        <option value="$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/BaseTest.java" />
+        <option value="$PROJECT_DIR$/beca-service/beca-services/src/test/resources/data.sql" />
+        <option value="$PROJECT_DIR$/beca-service/beca-model/src/main/java/mx/com/axity/model/UserDO.java" />
+        <option value="$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/service/becaServiceTest.java" />
       </list>
     </option>
   </component>
@@ -108,8 +139,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,20 +157,20 @@
               <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
-              <item name="beca-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
-              <item name="beca-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-model" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
-              <item name="beca-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-model" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -147,7 +178,47 @@
               <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
-              <item name="beca-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -156,11 +227,102 @@
               <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
               <item name="beca-service" type="462c0819:PsiDirectoryNode" />
-              <item name="beca-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="facade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="facade" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beca-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-service" type="462c0819:PsiDirectoryNode" />
+              <item name="beca-services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -169,7 +331,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551814910235" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551831403439" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -217,6 +379,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="becaServiceTest.shouldNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beca-services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.com.axity.services.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx.com.axity.services.service" />
+      <option name="MAIN_CLASS_NAME" value="mx.com.axity.services.service.becaServiceTest" />
+      <option name="METHOD_NAME" value="shouldNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="becaServiceTest.shouldReturnTheSumOfTwoNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beca-services" />
       <extension name="coverage">
@@ -233,10 +411,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="becaServiceTest.updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beca-services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.com.axity.services.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx.com.axity.services.service" />
+      <option name="MAIN_CLASS_NAME" value="mx.com.axity.services.service.becaServiceTest" />
+      <option name="METHOD_NAME" value="updateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.becaServiceTest.shouldNotFound" />
         <item itemvalue="JUnit.becaServiceTest" />
+        <item itemvalue="JUnit.becaServiceTest.updateUser" />
         <item itemvalue="JUnit.becaServiceTest.shouldReturnTheSumOfTwoNumbers" />
       </list>
     </recent_temporary>
@@ -255,23 +451,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="becaServiceTest_shouldReturnTheSumOfTwoNumbers - 2019.03.04 at 12h 12m 15s.xml">
-      <configuration name="becaServiceTest.shouldReturnTheSumOfTwoNumbers" configurationId="JUnit" />
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 17h 53m 17s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="becaServiceTest_shouldReturnTheSumOfTwoNumbers - 2019.03.04 at 12h 14m 26s.xml">
-      <configuration name="becaServiceTest.shouldReturnTheSumOfTwoNumbers" configurationId="JUnit" />
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 17h 53m 54s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="becaServiceTest - 2019.03.04 at 12h 18m 53s.xml">
-      <configuration name="becaServiceTest" configurationId="JUnit" />
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 17h 54m 26s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="becaServiceTest - 2019.03.04 at 12h 22m 41s.xml">
-      <configuration name="becaServiceTest" configurationId="JUnit" />
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 17h 55m 10s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 17h 56m 09s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 17h 56m 50s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 17h 59m 36s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 18h 04m 55s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 18h 07m 43s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="becaServiceTest_shouldNotFound - 2019.03.05 at 18h 09m 17s.xml">
+      <configuration name="becaServiceTest.shouldNotFound" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21406959" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22012103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -280,13 +495,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30605564" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6121113" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.43862522" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.049099836" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32569557" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -298,19 +513,40 @@
       <window_info anchor="right" id="Maven" order="6" weight="0.15355521" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22012103" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8477905" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.049099836" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32569557" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.15355521" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/beca-service/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
           <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/exceptions/BusinessException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -336,27 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="15" column="71" lean-forward="true" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -421,54 +636,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/IbecaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-model/src/main/java/mx/com/axity/model/UserDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/to/UserTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/to/ErrorTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/impl/becaServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/IbecaService.java" />
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/main/java/mx/com/axity/services/service/impl/IbecaServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
           <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/aspects/RequestValidatorAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beca-service/beca-web/src/main/java/mx/com/axity/web/rest/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
+        <state relative-caret-position="1">
           <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="58" />
           <folding>
             <element signature="method#getAllUsers#0;class#HelloController#0" />
@@ -480,10 +658,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/exceptions/BusinessException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/to/ErrorTo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/to/UserTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/beca-service/beca-services/src/test/java/mx/com/axity/services/service/becaServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state relative-caret-position="233">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-commons/src/main/java/mx/com/axity/commons/aspects/RequestValidatorAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="43" column="56" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beca-service/beca-model/src/main/java/mx/com/axity/model/UserDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
