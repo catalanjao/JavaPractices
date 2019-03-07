@@ -45,12 +45,12 @@ public class becaServiceTest extends BaseTest {
     }*/
     @Autowired protected IbecaService ibecaService;
 
-    /*@Test public void updateUser(){
+    @Test public void updateUser(){
         UserDO userDO=this.ibecaService.userByID(7);
         Assert.assertTrue(userDO!=null);
         Assert.assertTrue(new Long(7).equals(userDO.getId()));
         Assert.assertTrue("User7".equals(userDO.getName()));
-    }*/
+    }
 
     @Test public void shouldNotFound(){
         try{

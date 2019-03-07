@@ -15,6 +15,9 @@ http://localhost:9090/swagger-ui.html#/
 http://roufid.com/no-compiler-is-provided-in-this-environment/#1-_refer_the_java_home_to_a_jdk
 https://stackoverflow.com/questions/16890723/list-all-liquibase-sql-types
 
+5432	local
+5433	container
+
 chrome 30 seconds of knolewge
 
 url: jdbc:postgresql://10.11.5.171:5420/postgres
@@ -41,3 +44,43 @@ mvn clean compile
 mvn clean package
 mvn clean install
 mvn clean deploy
+
+
+docker run -p "9091:9090" f45cc97c4aaa	levanta el container
+-it (interactuar bin/bash) 
+-p puerto (externo:interno) 
+-t nombrw y contexto (.) a partir de donde se va a ejecutar
+-d no interactuar
+-e variable de entorno
+ENV variable de entorno
+ADD = COPY
+ENTERPOINT = CMD
+
+docker version
+docker --version
+
+vi 
+i	modo escritura	
+:wq	write quite
+ctrl +p, +q
+
+Dockerfile
+
+docker ps -a		status de los contenedores
+docker ps		contenedores activos
+docker stop +id		inicia  contenedor
+docker start +id	detiene contenedor	
+docker rm +id		borra contenedor imagen
+docker rmi +id		borra la imagen
+docker images		muestra las imagenes disponiblesx|
+docker build -t beca .  crea la imagen
+
+dockerhub bajar java pegamos el jar y excecute
+docker pull store/oracle/serverjre:8		obtenemos la imagen que contiene java
+	FROM openjdk:8-jre-slim
+	ENV JAR_FILE /fintech-service/fintech-web/target/*.jar
+	ADD ${JAR_FILE} app.jar
+	ENTRYPOINT ["java","-jar","/app.jar"]
+
+docker run -p 5433:5432 -e POSTGRES_DB=postgres -e POSTGRES_PASSWORD=project123 -d postgres
+docker build -t becaservice .
