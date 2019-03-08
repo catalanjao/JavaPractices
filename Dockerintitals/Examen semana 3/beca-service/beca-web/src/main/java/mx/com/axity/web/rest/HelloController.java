@@ -121,6 +121,15 @@ public class HelloController {
         }else{
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
+    }
 
+    @RequestMapping(value = "/login", method = RequestMethod.PUT, produces = "application/json")
+    public ResponseEntity updateLogin(@RequestBody LoginTO loginTO) {
+        LOG.info("Login");
+        LOG.info(loginTO.getUsr());
+        LOG.info(loginTO.getPwd());
+        LOG.info("Se invoca /users para el guardado");
+        this.IbecaFacade.updateLoginPwd(loginTO);
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
 }

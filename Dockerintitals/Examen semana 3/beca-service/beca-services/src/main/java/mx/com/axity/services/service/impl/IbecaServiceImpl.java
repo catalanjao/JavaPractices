@@ -100,4 +100,11 @@ public class IbecaServiceImpl implements IbecaService {
         return validation;
     }
 
+    @Override
+    public void updateLoginpass(LoginDO loginDO) {
+        if(getLoginExist(loginDO.getUsr().intValue())){
+            this.loginDAO.save(loginDO);
+        }
+    }
+
 }

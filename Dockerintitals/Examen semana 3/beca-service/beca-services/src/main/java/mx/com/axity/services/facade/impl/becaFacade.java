@@ -79,5 +79,11 @@ public class becaFacade implements IbecaFacade {
         return this.becaService.newSignUp(result);
     }
 
+    @Override
+    public void updateLoginPwd(LoginTO login) {
+        Type loginDOType = new TypeToken<LoginDO>() {}.getType();
+        this.becaService.updateLoginpass(this.modelMapper.map(login,loginDOType));
+    }
+
 
 }

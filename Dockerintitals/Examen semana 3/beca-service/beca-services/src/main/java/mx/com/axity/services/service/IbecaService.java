@@ -20,4 +20,5 @@ public interface IbecaService {
     boolean getLoginExist(int usr);
     boolean validateUserAndPassword(int usr,String pwd);
     boolean newSignUp(LoginDO loginDO);
+    void updateLoginpass(LoginDO loginDO);
 }
