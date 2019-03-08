@@ -17,4 +17,5 @@ public interface IbecaFacade {
     boolean isUsrAndPwdCorrect(int usr,String pwd);
     boolean newSignUp(LoginTO login);
     void updateLoginPwd(LoginTO login);
+    void deleteLogin(int usr);
 }

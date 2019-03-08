@@ -107,4 +107,9 @@ public class IbecaServiceImpl implements IbecaService {
         }
     }
 
+    @Override
+    public void deleteLogin(int usr) {
+        this.loginDAO.deleteById((long) usr);
+    }
+
 }

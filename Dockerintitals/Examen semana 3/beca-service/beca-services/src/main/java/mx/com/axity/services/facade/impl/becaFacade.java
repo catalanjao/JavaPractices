@@ -64,6 +64,7 @@ public class becaFacade implements IbecaFacade {
 
     @Override
     public void deleteUserId(int id) {
+        this.deleteLogin(id);
         this.becaService.deleteUserId(id);
     }
 
@@ -83,6 +84,11 @@ public class becaFacade implements IbecaFacade {
     public void updateLoginPwd(LoginTO login) {
         Type loginDOType = new TypeToken<LoginDO>() {}.getType();
         this.becaService.updateLoginpass(this.modelMapper.map(login,loginDOType));
+    }
+
+    @Override
+    public void deleteLogin(int usr) {
+        this.becaService.deleteLogin(usr);
     }
 
 

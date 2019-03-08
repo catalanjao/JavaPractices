@@ -115,7 +115,7 @@ public class HelloController {
         LOG.info("Login");
         LOG.info(loginTO.getUsr());
         LOG.info(loginTO.getPwd());
-        LOG.info("Se invoca /users para el guardado");
+        LOG.info("Se invoca /login para el guardado");
         if(this.IbecaFacade.newSignUp(loginTO)){
             return new ResponseEntity<>(HttpStatus.OK);
         }else{
@@ -128,8 +128,15 @@ public class HelloController {
         LOG.info("Login");
         LOG.info(loginTO.getUsr());
         LOG.info(loginTO.getPwd());
-        LOG.info("Se invoca /users para el guardado");
+        LOG.info("Se invoca /login para el update");
         this.IbecaFacade.updateLoginPwd(loginTO);
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.DELETE, produces = "application/json")
+    public ResponseEntity deleteLoginId(@RequestParam (value = "usr") int usr) {
+        LOG.info("Se invoca /login delete");
+        this.IbecaFacade.deleteLogin(usr);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
