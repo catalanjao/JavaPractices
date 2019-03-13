@@ -1,6 +1,7 @@
 package mx.com.axity.web.rest;
 
 import io.swagger.annotations.Api;
+import mx.com.axity.commons.to.FullTO;
 import mx.com.axity.commons.to.LoginTO;
 import mx.com.axity.commons.to.UserTO;
 import mx.com.axity.model.UserDO;
@@ -123,6 +124,15 @@ public class HelloController {
         }
     }
 
+    @RequestMapping(value = "/loginfull", method = RequestMethod.POST, produces = "application/json")
+    public ResponseEntity saveLogin(@RequestBody FullTO fullTO) {
+
+        LOG.info("Login");
+        LOG.info("Se invoca /login para el guardado");
+        this.IbecaFacade.registerUserFUll(fullTO);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
     @RequestMapping(value = "/login", method = RequestMethod.PUT, produces = "application/json")
     public ResponseEntity updateLogin(@RequestBody LoginTO loginTO) {
         LOG.info("Login");
@@ -130,7 +140,7 @@ public class HelloController {
         LOG.info(loginTO.getPwd());
         LOG.info("Se invoca /login para el update");
         this.IbecaFacade.updateLoginPwd(loginTO);
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.DELETE, produces = "application/json")

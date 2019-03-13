@@ -22,4 +22,5 @@ public interface IbecaService {
     boolean newSignUp(LoginDO loginDO);
     void updateLoginpass(LoginDO loginDO);
     void deleteLogin(int usr);
+    int findNewFullId(UserDO userDO);
 }

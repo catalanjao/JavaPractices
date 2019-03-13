@@ -83,11 +83,7 @@ public class IbecaServiceImpl implements IbecaService {
 
     @Override
     public boolean validateUserAndPassword(int usr, String pwd) {
-        if (this.getLoginExist(usr)){
-            return this.loginDAO.findById((long) usr).get().getPwd().equals(pwd);
-        }else {
-            return false;
-        }
+        return this.loginDAO.findById((long) usr).get().getPwd().equals(pwd);
     }
 
     @Override
@@ -111,5 +107,11 @@ public class IbecaServiceImpl implements IbecaService {
     public void deleteLogin(int usr) {
         this.loginDAO.deleteById((long) usr);
     }
+
+    @Override
+    public int findNewFullId(UserDO userDO) {
+        //
+    }
+
 
 }

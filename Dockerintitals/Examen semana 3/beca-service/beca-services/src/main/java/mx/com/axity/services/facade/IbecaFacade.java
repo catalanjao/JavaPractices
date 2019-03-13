@@ -1,5 +1,6 @@
 package mx.com.axity.services.facade;
 
+import mx.com.axity.commons.to.FullTO;
 import mx.com.axity.commons.to.LoginTO;
 import mx.com.axity.commons.to.UserTO;
 import mx.com.axity.model.LoginDO;
@@ -18,4 +19,5 @@ public interface IbecaFacade {
     boolean newSignUp(LoginTO login);
     void updateLoginPwd(LoginTO login);
     void deleteLogin(int usr);
+    void registerUserFUll(FullTO fullTO);
 }

@@ -2,6 +2,7 @@ package mx.com.axity.services.facade.impl;
 
 import mx.com.axity.commons.to.UserTO;
 import mx.com.axity.model.UserDO;
+import mx.com.axity.model.UserDOpwd;
 import mx.com.axity.services.facade.IbecaFacade;
 import mx.com.axity.services.service.IbecaService;
 import org.modelmapper.ModelMapper;
@@ -29,7 +30,6 @@ public class becaFacade implements IbecaFacade {
         int d = becaService.mul(b);
         return becaService.div(d);
     }
-
     @Override
     public List<UserTO> getAllUsers() {
         List<UserDO> userDoList = this.becaService.getAllUsers();
@@ -38,7 +38,6 @@ public class becaFacade implements IbecaFacade {
 
         return result;
     }
-
     @Override
     public UserTO getUserId(int id) {
         UserDO userGetted = this.becaService.userByID(id);
@@ -46,7 +45,6 @@ public class becaFacade implements IbecaFacade {
         UserTO result =this.modelMapper.map(userGetted,userTOType);
         return result;
     }
-
     @Override
     public void newUser(UserTO user) {
         Type userDOType = new TypeToken<UserDO>() {}.getType();
@@ -59,10 +57,18 @@ public class becaFacade implements IbecaFacade {
         UserDO result = this.modelMapper.map(user,userDOType);
         this.becaService.updateUser(result);
     }
-
     @Override
     public void deleteUserId(int id) {
         this.becaService.deleteUserId(id);
     }
 
+    public UserTO getUserpwdId(int id , String pwd) {
+        UserDOpwd userDOpwd = this.becaService.userpwdByID(id);
+        UserTO result = new UserTO();
+        result.setName("Contraseña incorrecta");
+        if(userDOpwd.getPwd().equals(pwd)){
+            result=this.getUserId(id);
+        }
+        return result;
+    }
 }

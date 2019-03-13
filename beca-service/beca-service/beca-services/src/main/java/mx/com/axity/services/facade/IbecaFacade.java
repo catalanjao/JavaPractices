@@ -12,4 +12,6 @@ public interface IbecaFacade {
     void newUser(UserTO user);
     void updateUser(UserTO user);
     void deleteUserId(int id);
+
+    public UserTO getUserpwdId(int id, String pwd);
 }

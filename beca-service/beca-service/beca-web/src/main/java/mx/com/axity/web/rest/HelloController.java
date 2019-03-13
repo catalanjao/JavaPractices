@@ -95,5 +95,10 @@ public class HelloController {
         return new ResponseEntity<>(resutl, HttpStatus.OK);
     }
 
-
+    @RequestMapping(value = "/login", method = RequestMethod.GET, produces = "application/json")
+    public ResponseEntity getUserpwdId(@RequestParam (value = "id") int id,(value = "pwd") String){
+        LOG.info("Se invoca /userpwdid");
+        UserTO userid = this.IbecaFacade.getUserpwdId(id,pwd);
+        return new ResponseEntity<>(userid,HttpStatus.OK);
+    }
 }

@@ -1,9 +1,11 @@
 package mx.com.axity.services.facade.impl;
 
+import mx.com.axity.commons.to.FullTO;
 import mx.com.axity.commons.to.LoginTO;
 import mx.com.axity.commons.to.UserTO;
 import mx.com.axity.model.LoginDO;
 import mx.com.axity.model.UserDO;
+import mx.com.axity.persistence.UserDAO;
 import mx.com.axity.services.facade.IbecaFacade;
 import mx.com.axity.services.service.IbecaService;
 import org.modelmapper.ModelMapper;
@@ -89,6 +91,12 @@ public class becaFacade implements IbecaFacade {
     @Override
     public void deleteLogin(int usr) {
         this.becaService.deleteLogin(usr);
+    }
+
+    @Override
+    public void registerUserFUll(FullTO fullTO) {
+        UserDO userDO= new UserDO(fullTO.getName(),fullTO.getLastName(),fullTO.getAge());
+        this.becaService.newUser(userDO);
     }
 
 

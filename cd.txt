@@ -14,6 +14,15 @@ https://swagger.io/
 http://localhost:9090/swagger-ui.html#/
 http://roufid.com/no-compiler-is-provided-in-this-environment/#1-_refer_the_java_home_to_a_jdk
 https://stackoverflow.com/questions/16890723/list-all-liquibase-sql-types
+https://nodejs.org/es/
+https://flexboxfroggy.com/#es
+angular material
+angular.io
+https://ionicframework.com/docs/components/
+https://ionicframework.com/docs/v3/isp
+
+
+ctrl+shift+F busca sobre los archivos en visual studio code
 
 5432	local
 5433	container
@@ -45,8 +54,8 @@ mvn clean package
 mvn clean install
 mvn clean deploy
 
-
-docker run -p "9091:9090" f45cc97c4aaa	levanta el container
+docker run -it -p 8090:80 ubuntu bin/bash
+docker run -d -p "9091:9090" examen3	levanta el container
 -it (interactuar bin/bash) 
 -p puerto (externo:interno) 
 -t nombrw y contexto (.) a partir de donde se va a ejecutar
@@ -83,4 +92,28 @@ docker pull store/oracle/serverjre:8		obtenemos la imagen que contiene java
 	ENTRYPOINT ["java","-jar","/app.jar"]
 
 docker run -p 5433:5432 -e POSTGRES_DB=postgres -e POSTGRES_PASSWORD=project123 -d postgres
-docker build -t becaservice .
+docker build -t examen3 .
+
+
+angular
+
+npm install -g @angular/cli
+
+-g global
+npm install -g typescript
+npm -version
+
+npm install 	para instalar los modulos y dependencias
+npm start
+ng g component Holamundo		crear componente y lo añade en app.module.ts
+					se agrega el route en app.components.ts para verlo como pagina
+					se genera en app.components.html la implementacion de la nueva pagina
+				
+npm install -g ionic@3
+ionic g page NombrePage --module=false
+-g de generar
+ionic serve -l
+-l para los tres dispositivos
+ionic serve --port=3000
+
+ionic g pipe NombrePipe
